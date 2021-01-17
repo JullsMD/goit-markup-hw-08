@@ -1,0 +1,62 @@
+/* MAIN */
+
+/* Герой */
+
+.hero-overlay {
+    max-width: 1600px;
+    min-height: 600px;
+  
+    margin-right: auto;
+    margin-left: auto;
+  
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/hero-75.jpg");
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+    background-color: var(--secondary-background-color);
+  }
+  
+  .hero {
+    text-align: center;
+  
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
+  }
+  .hero__text {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  
+    color: var(--primary-background-color);
+  }
+  .hero__btn {
+    display: inline-block;
+    min-width: 200px;
+  
+    padding: 10px 32px;
+    margin-top: 30px;
+  
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+  
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    letter-spacing: 0.06em;
+  
+    background-color: var(--accent-color);
+    color: var(--primary-background-color);
+  }
+  

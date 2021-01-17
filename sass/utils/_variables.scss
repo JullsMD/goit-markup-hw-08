@@ -1,0 +1,31 @@
+:root {
+  // цвета
+    --accent-color: #2196f3;
+    --btn-active: #188ce8;
+    --logo-text-color: #000000;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --primary-background-color: #ffffff;
+    --secondary-background-color: #2f303a;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+    --background-team-btn-icons: #f5f4fa;
+    --border-card: #eeeeee;
+    --icon-color: #afb1b8;
+    --socials-footer: rgba(255, 255, 255, 0.1);
+    --card-bgc: rgba(33, 150, 243, 0.9);
+    --wwd-img-description: rgba(47, 48, 58, 0.8);
+    --border-icon: rgba(0, 0, 0, 0.1);
+    --backdrop: rgba(0, 0, 0, 0.2);
+    --input-border: rgba(255, 255, 255, 0.3);
+    --form-comment: rgba(117, 117, 117, 0.5);
+    --form-border: rgba(33, 33, 33, 0.2);
+    --header-border: #ECECEC; 
+  // отступы
+    --card-set-gap: 30px;
+    --features-list-gap: 30px;
+    --features-list-half-gap: 15px;
+    --team-list-gap: 30px;
+    // шрифты
+    --main-font: Roboto, sans-serif;
+    --secondary-font: Raleway, sans-serif;
+}

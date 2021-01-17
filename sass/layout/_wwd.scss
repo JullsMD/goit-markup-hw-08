@@ -1,0 +1,40 @@
+/* Чем мы занимаемся */
+
+.wwd-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wwd-list__img {
+  display: block;
+}
+
+.wwd-list__img-thumb {
+  position: relative;
+}
+.wwd-list__img-description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 70px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: var(--wwd-img-description);
+  color: var(--primary-background-color);
+}
+  
+ 
+  
+  
+  
