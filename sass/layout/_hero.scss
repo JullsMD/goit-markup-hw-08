@@ -2,6 +2,67 @@
 
 /* Герой */
 
+
+.hero-overlay {
+    padding: 118px 60px;
+  
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/hero-mob1x.jpg");
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+    background-color: var(--secondary-background-color);
+
+    outline: 1px solid red;
+    }
+    
+    .hero {
+      text-align: center;
+    }
+
+    .hero__text {
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.615;
+      letter-spacing: 0.056em;
+      text-transform: uppercase;
+    
+      color: var(--primary-background-color);
+    }
+
+    .hero__btn {
+    display: inline-block;
+    min-width: 200px;
+  
+    padding: 10px 32px;
+    margin-top: 30px;
+  
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+  
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+  
+    background-color: var(--accent-color);
+    color: var(--primary-background-color);
+
+    @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    .hero__btn {
+    background-image: url('hero-mob@2x.png');
+  }
+
+
 // .hero-overlay {
 //     max-width: 1600px;
 //     min-height: 600px;
