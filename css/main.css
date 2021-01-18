@@ -65,25 +65,24 @@ p {
 .container {
   width: 100%;
   padding: 0 15px;
-  outline: 1px solid green;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    min-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    min-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
-    margin-left: 0 auto;
+    min-width: 1200px;
   }
 }
 
@@ -284,6 +283,47 @@ p {
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--primary-background-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-overlay {
+    padding-right: 204px;
+    padding-left: 204px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-tab.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 768px 400px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
+  .hero-overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-tab@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-overlay {
+    padding-top: 200px;
+    padding-right: 452px;
+    padding-bottom: 280px;
+    padding-left: 452px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-75.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--secondary-background-color);
+  }
+  .hero__text {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero-overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-75@2x.jpg");
+  }
 }
 
 .backdrop.is-hidden {
