@@ -88,8 +88,8 @@ color: var(--primary-background-color);
 }
 // retina
 @media screen and (min-device-pixel-ratio: 2),
-screen and (min-resolution: 192dpi) and (min-width: 480px),
-screen and (min-resolution: 2dppx) and (min-width: 480px) {
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
       .hero-overlay {
       background-image: linear-gradient(
         to right,
@@ -131,8 +131,8 @@ screen and (min-resolution: 2dppx) and (min-width: 480px) {
 
 // retina
 @media screen and (min-device-pixel-ratio: 2),
-screen and (min-resolution: 192dpi) and (min-width: 768px),
-screen and (min-resolution: 2dppx) and (min-width: 768px) {
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
   
       .hero-overlay {
       background-image: linear-gradient(
