@@ -20,10 +20,6 @@
   --form-comment: rgba(117, 117, 117, 0.5);
   --form-border: rgba(33, 33, 33, 0.2);
   --header-border: #ECECEC;
-  --card-set-gap: 30px;
-  --features-list-gap: 30px;
-  --features-list-half-gap: 15px;
-  --team-list-gap: 30px;
   --main-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
 }
@@ -100,6 +96,7 @@ p {
 }
 
 .section__title {
+  margin-bottom: 30px;
   font-weight: bold;
   font-size: 28px;
   line-height: 1.178;
@@ -653,44 +650,75 @@ p {
 }
 
 .team-list {
-  display: flex;
+  margin: -15px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+  }
 }
 
 .team-list__card {
+  width: 100%;
   overflow: hidden;
-  width: calc(100% / 4 -1 * var(--team-list-gap));
-  margin-right: var(--team-list-gap);
   border: 1px solid transparent;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
 }
 
-.team-list__card:last-child {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .team-list__card {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
 }
 
-.team-list__img {
-  display: block;
+@media screen and (min-width: 1200px) {
+  .team-list__card {
+    flex-basis: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
+}
+
+.team-list__img-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__img {
+    width: 354px;
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__img {
+    width: 270px;
+    height: 260px;
+  }
 }
 
 .team-list__description {
+  padding-top: 30px;
   background-color: var(--primary-background-color);
+  text-align: center;
 }
 
 .team-list__subtitle {
-  padding-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 
 .team-list__text {
-  margin-top: 10px;
-  margin-top: 10px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   color: var(--secondary-text-color);
 }
 
