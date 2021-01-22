@@ -60,7 +60,8 @@ p {
 
 .container {
   width: 100%;
-  padding: 0 15px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -253,23 +254,6 @@ p {
 
 /* MAIN */
 /* Герой */
-.hero-overlay {
-  width: 480px;
-  height: 400px;
-  padding: 118px 60px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mob.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 480px 400px;
-  background-color: var(--secondary-background-color);
-}
-
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
-  .hero-overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mob@2x.jpg");
-  }
-}
-
 .hero {
   text-align: center;
 }
@@ -299,10 +283,26 @@ p {
   color: var(--primary-background-color);
 }
 
+@media screen and (max-width: 767px) {
+  .hero-overlay {
+    padding: 118px 60px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mob.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 480px 400px;
+    background-color: var(--secondary-background-color);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero-overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mob@2x.jpg");
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero-overlay {
-    padding-right: 204px;
-    padding-left: 204px;
+    padding: 118px 204px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-tab.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -310,7 +310,7 @@ p {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-tab@2x.jpg");
   }
@@ -318,25 +318,25 @@ p {
 
 @media screen and (min-width: 1200px) {
   .hero-overlay {
-    padding-top: 200px;
-    padding-right: 452px;
-    padding-bottom: 280px;
-    padding-left: 452px;
+    padding: 200px auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-75.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: var(--secondary-background-color);
   }
-  .hero__text {
-    font-size: 44px;
-    line-height: 1.36;
-  }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-75@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__text {
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -585,7 +585,7 @@ p {
   font-weight: 700;
   line-height: 1.143;
   text-transform: uppercase;
-  text-align: center;
+  text-align: start;
 }
 
 .features-list__text {
@@ -607,6 +607,10 @@ p {
 }
 
 /* Чем мы занимаемся */
+.wwd {
+  padding-top: 0;
+}
+
 @media screen and (max-width: 1199px) {
   .wwd {
     display: none;
@@ -649,23 +653,11 @@ p {
   background-color: var(--background-team-btn-icons);
 }
 
-@media screen and (min-width: 768px) {
-  .team-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-  .team-list .team-list__card {
-    flex-basis: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team-list .team-list__card {
-    flex-basis: calc((100% - 8 * 15px) / 4);
-    margin: 15px;
-  }
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px;
 }
 
 .team-list__card {
@@ -675,6 +667,20 @@ p {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__card {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__card {
+    flex-basis: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
 }
 
 .team-list__img-thumb {
@@ -764,30 +770,44 @@ p {
 /* Clients */
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   justify-self: center;
+  margin: -15px;
 }
 
 .clients-list__item {
-  width: 170px;
   height: 90px;
-  margin-right: 30px;
+  margin: 15px;
 }
 
-.clients-list__item:last-child {
-  margin-right: 0;
+@media screen and (max-width: 767px) {
+  .clients-list__item {
+    flex-basis: calc((100% - 4* 15px)/ 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    flex-basis: calc((100% - 6* 15px)/ 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list__item {
+    flex-basis: calc((100% - 12* 15px)/ 6);
+    height: 90px;
+  }
 }
 
 .clients-list__link {
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 90px;
-  margin: 0;
+  height: 100%;
   color: var(--icon-color);
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list__link:hover, .clients-list__link:focus {
