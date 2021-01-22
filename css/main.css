@@ -65,38 +65,53 @@ p {
 .container {
   width: 100%;
   padding: 0 15px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    min-width: 480px;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    min-width: 1200px;
+    width: 1200px;
   }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
-  margin-bottom: 50px;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.178;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.167;
+  }
 }
 
 .submit {
@@ -242,6 +257,8 @@ p {
 /* MAIN */
 /* Герой */
 .hero-overlay {
+  width: 480px;
+  height: 400px;
   padding: 118px 60px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mob.jpg");
   background-repeat: no-repeat;
@@ -533,35 +550,51 @@ p {
 }
 
 /* Преимущества */
-.features {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  overflow: auto;
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .features-list__item {
-  width: calc(100% / 4 -2 * var(--features-list-gap));
-  margin-bottom: 30px;
+  max-width: 450px;
 }
 
-.features-list__item:last-child {
-  margin-bottom: 0;
+@media screen and (max-width: 767px) {
+  .features-list__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-list__item {
+    flex-basis: calc((100% - 4 * 15px)/ 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list__item {
+    flex-basis: calc((100% - 8 * 15px)/ 4);
+    margin: 15px;
+  }
 }
 
 .features-list__title {
-  text-align: center;
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.14;
+  line-height: 1.143;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .features-list__text {
-  margin-top: 10px;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.018em;
+  line-height: 1.714;
   color: var(--secondary-text-color);
 }
 
@@ -574,29 +607,6 @@ p {
   margin-bottom: 30px;
   background-color: var(--background-team-btn-icons);
   border-radius: 4px;
-}
-
-@media screen and (min-width: 768px) {
-  .features-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .features {
-    padding-top: 94px;
-  }
-  .features-list__item {
-    min-width: calc(100% / 4 -1 * var(--features-list-gap));
-    margin-left: var(--features-list-gap);
-  }
-  .features-list__item:last-child {
-    margin-left: var(--features-list-half-gap);
-  }
-  .features-list__item:first-child {
-    margin-left: 0;
-  }
 }
 
 /* Чем мы занимаемся */
