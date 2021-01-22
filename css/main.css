@@ -834,6 +834,18 @@ p {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .page-footer {
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+  .page-footer .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .address__style {
   margin-top: 20px;
   margin-bottom: 60px;
@@ -989,8 +1001,9 @@ p {
   border-color: var(--form-comment);
 }
 
-.footer .submit {
-  margin: 0 auto;
+.submit.submit-plane {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* ПОРТФОЛИО */

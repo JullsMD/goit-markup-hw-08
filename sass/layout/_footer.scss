@@ -5,6 +5,16 @@
     padding-bottom: 60px;
 
     text-align: center;
+    @media screen and (min-width:768px) {
+      padding-left: 76px;
+      padding-right: 89px;
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    }
   }
 
 .address__style {
@@ -179,8 +189,9 @@ color: var(--primary-background-color);
 }
 }
 
-.footer .submit {
- margin: 0 auto;
+.submit.submit-plane {
+ margin-right: auto;
+ margin-left: auto;
 }
   
 
