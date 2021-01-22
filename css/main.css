@@ -610,6 +610,12 @@ p {
 }
 
 /* Чем мы занимаемся */
+@media screen and (max-width: 1199px) {
+  .wwd {
+    display: none;
+  }
+}
+
 .wwd-list {
   display: flex;
   justify-content: space-between;
