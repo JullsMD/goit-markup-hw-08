@@ -157,6 +157,13 @@ p {
   text-decoration: none;
 }
 
+@media screen and (max-width: 767px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.174;
+  }
+}
+
 .logo__header {
   color: var(--logo-text-color);
 }
@@ -822,23 +829,17 @@ p {
 /* FOOTER */
 .page-footer {
   background-color: var(--secondary-background-color);
-}
-
-.footer {
-  display: flex;
-}
-
-/* Адресс */
-.address {
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
 }
 
 .address__style {
   margin-top: 20px;
+  margin-bottom: 60px;
   font-style: normal;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.714;
 }
 
 .address__link {
@@ -852,7 +853,13 @@ p {
 }
 
 .contacts-list__item {
-  margin-top: 9px;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list__item {
+    margin-top: 9px;
+  }
 }
 
 .contacts-list__link {
@@ -867,9 +874,7 @@ p {
 
 /* socials-footer */
 .socbox {
-  padding-top: 72px;
-  padding-bottom: 100px;
-  margin-left: 70px;
+  margin-bottom: 60px;
 }
 
 .socbox__list {
@@ -911,46 +916,55 @@ p {
 
 .socbox__slogan {
   width: 145px;
-  margin: 0;
+  margin: 0 auto;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.172;
   text-transform: uppercase;
   color: var(--primary-background-color);
 }
 
 /* Подписка */
-.subscribe {
-  padding-top: 72px;
-  padding-bottom: 93px;
-  margin-left: auto;
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    padding-top: 72px;
+    padding-bottom: 93px;
+    margin-left: auto;
+  }
 }
 
 .subscribe__slogan {
   display: block;
-  margin-right: auto;
-  margin-left: 0;
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.172;
   text-transform: uppercase;
   color: var(--primary-background-color);
 }
 
-.subscribe__btn {
+.subscribe {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__btn {
+    display: flex;
+  }
 }
 
 .subscribe__input {
   display: block;
   position: relative;
-  width: 358px;
+  width: 450px;
   min-height: 50px;
-  margin-right: 12px;
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-bottom: 20px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
@@ -973,6 +987,10 @@ p {
 
 .subscribe__input:placeholder-shown {
   border-color: var(--form-comment);
+}
+
+.footer .submit {
+  margin: 0 auto;
 }
 
 /* ПОРТФОЛИО */
