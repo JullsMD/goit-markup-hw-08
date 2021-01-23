@@ -157,7 +157,7 @@ p {
   text-decoration: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .logo {
     font-size: 24px;
     line-height: 1.174;
@@ -889,6 +889,13 @@ p {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .socbox {
+    margin-bottom: 0;
+    margin-right: 93px;
+  }
+}
+
 .socbox__list {
   display: flex;
   justify-content: center;
@@ -936,11 +943,16 @@ p {
   color: var(--primary-background-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .socbox__slogan {
+    margin: 0;
+  }
+}
+
+/* Подписка */
 /* Подписка */
 @media screen and (min-width: 1200px) {
   .subscribe {
-    padding-top: 72px;
-    padding-bottom: 93px;
     margin-left: auto;
   }
 }
@@ -970,7 +982,6 @@ p {
 
 .subscribe__input {
   display: block;
-  position: relative;
   width: 450px;
   min-height: 50px;
   padding-left: 16px;
@@ -999,6 +1010,13 @@ p {
 
 .subscribe__input:placeholder-shown {
   border-color: var(--form-comment);
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    position: relative;
+    margin-right: 12px;
+  }
 }
 
 .submit.submit-plane {

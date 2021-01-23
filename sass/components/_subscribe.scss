@@ -1,0 +1,83 @@
+/* Подписка */
+
+/* Подписка */
+.subscribe {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+
+.subscribe__slogan {
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.172;
+  text-transform: uppercase;
+
+  color: var(--primary-background-color);
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe__btn {
+  @media screen and (min-width: 1200px) {
+    display: flex; 
+  }
+  
+}
+.subscribe__input {
+  display: block;
+  width: 450px;
+  min-height: 50px;
+
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  margin-bottom: 20px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  
+  color: var(--footer-text-color);
+  background-color: var(--secondary-background-color);
+ 
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  border-radius: 4px;
+  border: 1px solid var(--input-border);
+
+  &::placeholder {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  
+  color: var(--footer-text-color);
+  background-color: var(--secondary-background-color);
+  }
+  &:placeholder-shown {
+  border-color: var(--form-comment);}
+
+      @media screen and (min-width: 1200px) {
+        position: relative;
+      
+        margin-right: 12px;
+      }
+
+}
+
+.submit.submit-plane {
+ margin-right: auto;
+ margin-left: auto;
+}
