@@ -25,6 +25,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+  align-items: flex-start;
+  }
 }
 .subscribe__btn {
   @media screen and (min-width: 1200px) {
@@ -71,7 +75,7 @@
 
       @media screen and (min-width: 1200px) {
         position: relative;
-      
+        width: 358px;
         margin-right: 12px;
       }
 
