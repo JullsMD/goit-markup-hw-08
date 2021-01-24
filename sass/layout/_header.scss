@@ -1,5 +1,6 @@
 /*  HEADER */
 .page-header {
+  width: 100%;
   display: flex;
   align-items: center;
  
@@ -7,11 +8,11 @@
   padding-top: 16px;
   padding-bottom: 16px;
 
-   background-color: var(--primary-background-color);
+  background-color: var(--primary-background-color);
 
-  // @media screen and (min-width: 1200px){
- 
-  // }
+  @media screen and (max-width: 1199px){
+    position: fixed;
+      }
 }
 
 @media screen and (max-width: 767px){
@@ -58,16 +59,8 @@
       }
 }
 
-.burger-menu {
-  display: block;
-  margin-left: auto;
-  margin-right: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-  background-color: transparent;
-  fill: var(--primary-text-color);
-}
+
+
 // .site-nav__link-current::after {
 //       content: "";
 //       position: absolute;

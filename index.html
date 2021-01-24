@@ -54,12 +54,15 @@
         +38 096 111 11 11</a>
     </div>
 <!-- Burger=menu -->
-    <button type="button"  class="burger-menu">
-      <svg width="40" height="40">
-        <use href="./images/icons/sprite2.svg#icon-menu-open"></use>
-        <use href="./images/icons/sprite2.svg#icon-menu-close"></use>
+    <button type="button"  class="burger-menu is-open" data-menu-button>
+      <svg aria-label="переключатель меню навигации" width="40" height="40">
+        <use class="burger-menu__icon-menu-open" href="./images/icons/sprite2.svg#icon-menu-open"></use>
+        <use class="burger-menu__icon-menu-close" href="./images/icons/sprite2.svg#icon-menu-close"></use>
       </svg>
     </button>
+
+    <div class="burger-menu__container is-open" data-menu>
+    </div>
   </div>
   </header>
 
@@ -75,21 +78,21 @@
 </section>
 
 <!-- Модальное окно -->
-<!-- <div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
 
   <div class="modal">
     <button type="button" class="modal__close-icon" data-modal-close>
       <svg width="11" height="11">
         <use href="./images/icons/sprite.svg#close"></use>
       </svg>
-    </button> -->
+    </button>
 
     <!-- ФОРМА -->
-    <!-- <form class="form"> -->
-    <!--  -->
-    <!-- <strong class="form__slogan">Оставьте свои данные, мы вам перезвоним</strong> -->
+    <form class="form">
+    
+    <strong class="form__slogan">Оставьте свои данные, мы вам перезвоним</strong>
     <!-- name -->
-    <!-- <div class="form__style">
+    <div class="form__style">
       <label class="form__label" for="name">Имя</label>
       <div class="form__input-style">
       <input type="text" id="name" name="name" class="form__input" autocomplete="off" placeholder=" ">
@@ -97,10 +100,10 @@
         <use href="./images/icons/sprite2.svg#name"></use>
       </svg>
     </div>
-    </div> -->
+    </div>
 
     <!-- tel -->
-    <!-- <div class="form__style">
+    <div class="form__style">
       <label class="form__label" for="tel">Телефон</label>
       <div class="form__input-style">
       <input type="tel" id="tel" name="tel" class="form__input" autocomplete="off" placeholder=" ">
@@ -108,10 +111,10 @@
         <use href="./images/icons/sprite2.svg#number"></use>
       </svg>
     </div>
-    </div> -->
+    </div>
 
     <!-- mail -->
-    <!-- <div class="form__style">
+    <div class="form__style">
       <label class="form__label" for="email">Почта</label>
       <div class="form__input-style">
       <input type="email" id="email" name="email" class="form__input" placeholder=" ">
@@ -119,30 +122,30 @@
         <use href="./images/icons/sprite2.svg#email"></use>
       </svg>
     </div>
-    </div> -->
+    </div>
 
     <!-- comment -->
-    <!-- <div class="form__style">
+    <div class="form__style">
       <label class="form__label">Комментарий</label>
       <textarea name="comment" class="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
-    </div> -->
+    </div>
 
     <!-- agreement -->
-    <!-- <div class="check">
+    <div class="check">
       <label class="check__label">
         <input type="checkbox" class="check__checkbox" value="agreement" checked>
           <span class="check__icon"></span>
           <span class="check__agree">Соглашаюсь с рассылкой и принимаю </span>
           <a class="check__link">Условия договора</a>
       </label>
-    </div> -->
+    </div>
 
     <!-- submit -->
-    <!-- <button class="submit submit-noplane" type="submit">Отправить</button>
+    <button class="submit submit-noplane" type="submit">Отправить</button>
     </form>
   </div>
 
-</div> -->
+</div>
 
 <!-- Преимущества -->
 <section class="features container section">
@@ -575,5 +578,6 @@
 </footer>
 
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>
