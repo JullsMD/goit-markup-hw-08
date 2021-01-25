@@ -38,7 +38,7 @@
 }
 .subscribe__input {
   display: block;
-  width: 450px;
+  width: 100%;
   min-height: 50px;
 
   padding-left: 16px;
@@ -72,6 +72,10 @@
   }
   &:placeholder-shown {
   border-color: var(--form-comment);}
+
+      @media screen and (max-width: 1199px) {
+        width: 450px;
+      }
 
       @media screen and (min-width: 1200px) {
         position: relative;

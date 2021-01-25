@@ -7,9 +7,9 @@
   padding-bottom: 16px;
 
   background-color: var(--primary-background-color);
-// @media screen and (max-width: 767px) {
-//   position: fixed;
-// }
+
+  border-bottom: 1px solid var(--header-border);
+
 }
 
 @media screen and (max-width: 767px){

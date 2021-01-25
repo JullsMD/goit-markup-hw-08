@@ -14,6 +14,13 @@
 
   background-color: var(--backdrop);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width: 1199px) {
+    overflow-y: scroll;
+    // top: 93px;
+    // left: 15px;
+    // bottom: 94px;
+    // right: 15px;
+  }
 }
 
 
