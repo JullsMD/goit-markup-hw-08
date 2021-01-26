@@ -4,6 +4,11 @@
   pointer-events: none;
 }
 .backdrop {
+  padding-top: 93px;
+  padding-right: 15px;
+  padding-bottom: 94px;
+  padding-left: 15px;
+
   opacity: 1;
  
   position: fixed;
@@ -14,13 +19,8 @@
 
   background-color: var(--backdrop);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (max-width: 1199px) {
-    overflow-y: scroll;
-    // top: 93px;
-    // left: 15px;
-    // bottom: 94px;
-    // right: 15px;
-  }
+
+  overflow-y: scroll;
 }
 
 
@@ -30,22 +30,29 @@
 }
 
 .modal {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
+  width: 450px;
+  min-height: 609px ;
+  margin-right: auto;
+  margin-left: auto;
   padding: 40px;
 
-  transform: translate(-50%, -50%) scale(1);
-  
-  width: 528px;
-  
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--primary-background-color);
   border-radius: 4px;
+
+
+  @media screen and (min-width: 768px) {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%) scale(1);
+}  
+  @media screen and (min-width: 1200px) {
+  width: 528px;
+  min-height: 581px;
+  }
 }
 
 .modal__close-icon {
@@ -82,7 +89,6 @@
 .form {
   font-weight: normal;
   color: var(--secondary-text-color);
-
 }
 
 .form__slogan {
@@ -120,13 +126,14 @@
 }
 
 .form__input-style {
-  position: relative;
+   position: relative;
   color: var(--primary-text-color);
+
 }
 
 .form__input {
   display: flex;
-  width: 448px;
+  width: 100%;
   height: 40px;
 
   padding-left: 42px;
@@ -236,22 +243,34 @@
     }
 }
 
-
-
 .check__agree {
-  margin-left: 7px;
-
-  &,
-  .check-link {
+  margin-left: 8px;
+  letter-spacing: 0.02em;
+  @media screen and (max-width: 1199px){ 
+    font-size: 12px;
+    line-height: 1.171;
+  
+  }
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.714;
-  } 
-
+  }
 }
+
 .check__link {
-  margin-left: 4px;
+  padding-bottom: 1px;
 
   color: var(--accent-color);
   text-decoration: underline;
   text-decoration-skip-ink: none;
-}
+
+  @media screen and (max-width: 1199px){ 
+    font-size: 12px;
+    line-height: 1.171;
+    margin: 0;
+  }
+  @media screen and (min-width: 1200px) {
+     font-size: 14px;
+      line-height: 1.714;
+  }
+} 

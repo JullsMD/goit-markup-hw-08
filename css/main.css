@@ -332,7 +332,7 @@ p {
     display: none;
     text-align: start;
     position: absolute;
-    top: 100%;
+    top: 20%;
     left: 0;
     width: 100%;
     height: 796px;
@@ -351,19 +351,6 @@ p {
   .burger-menu__container.is-open {
     display: block;
   }
-}
-
-.burger-menu__item {
-  margin-bottom: 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.burger-menu__item:last-child {
-  margin-bottom: 0;
-}
-
-.burger-menu__item:hover, .burger-menu__item:focus {
-  color: var(--accent-color);
 }
 
 /* MAIN */
@@ -461,6 +448,10 @@ p {
 }
 
 .backdrop {
+  padding-top: 93px;
+  padding-right: 15px;
+  padding-bottom: 94px;
+  padding-left: 15px;
   opacity: 1;
   position: fixed;
   top: 0;
@@ -469,12 +460,7 @@ p {
   height: 100%;
   background-color: var(--backdrop);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (max-width: 1199px) {
-  .backdrop {
-    overflow-y: scroll;
-  }
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden .modal {
@@ -483,16 +469,30 @@ p {
 }
 
 .modal {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  width: 450px;
+  min-height: 609px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 40px;
-  transform: translate(-50%, -50%) scale(1);
-  width: 528px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--primary-background-color);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__close-icon {
@@ -559,7 +559,7 @@ p {
 
 .form__input {
   display: flex;
-  width: 448px;
+  width: 100%;
   height: 40px;
   padding-left: 42px;
   padding-top: 11px;
@@ -651,20 +651,44 @@ p {
 }
 
 .check__agree {
-  margin-left: 7px;
+  margin-left: 8px;
+  letter-spacing: 0.02em;
 }
 
-.check__agree,
-.check__agree .check-link {
-  font-size: 14px;
-  line-height: 1.714;
+@media screen and (max-width: 1199px) {
+  .check__agree {
+    font-size: 12px;
+    line-height: 1.171;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .check__agree {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .check__link {
-  margin-left: 4px;
+  padding-bottom: 1px;
   color: var(--accent-color);
   text-decoration: underline;
   text-decoration-skip-ink: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .check__link {
+    font-size: 12px;
+    line-height: 1.171;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .check__link {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 /* Преимущества */
@@ -1232,7 +1256,7 @@ p {
   border: 2px solid var(--accent-color);
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .card-set {
     display: flex;
     flex-wrap: wrap;
