@@ -182,6 +182,13 @@ p {
   border-bottom: 1px solid var(--header-border);
 }
 
+@media screen and (min-width: 767px) {
+  .page-header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .site-nav.list, .contacts {
     display: none;
@@ -222,7 +229,7 @@ p {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .site-nav__link-current::after {
     content: "";
     position: absolute;
@@ -237,6 +244,7 @@ p {
 
 .contacts {
   margin-left: auto;
+  margin-bottom: -10px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -267,7 +275,7 @@ p {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__link {
     margin-bottom: 10px;
   }
@@ -313,35 +321,36 @@ p {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .burger-menu {
     display: none;
   }
 }
 
-.burger-menu__container {
-  display: none;
-  text-align: start;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 796px;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.172;
-  letter-spacing: 0.02em;
-  background-color: var(--primary-background-color);
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
-}
-
-.burger-menu__container.is-open {
-  display: block;
+@media screen and (max-width: 767px) {
+  .burger-menu__container {
+    display: none;
+    text-align: start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 796px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.172;
+    letter-spacing: 0.02em;
+    background-color: var(--primary-background-color);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
+  }
+  .burger-menu__container.is-open {
+    display: block;
+  }
 }
 
 .burger-menu__item {
@@ -698,6 +707,12 @@ p {
   line-height: 1.143;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features-list__title {
+    text-align: start;
+  }
 }
 
 .features-list__text {
@@ -1176,10 +1191,14 @@ p {
   margin-top: -15px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .filter-list {
     justify-content: center;
-    padding-top: 94px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-list {
     padding-bottom: 50px;
   }
 }
@@ -1210,41 +1229,35 @@ p {
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   background-color: var(--accent-color);
   color: var(--primary-background-color);
-  border: 1px solid var(--accent-color);
+  border: 2px solid var(--accent-color);
 }
 
-.card-set {
-  width: 100%;
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 481px) {
   .card-set {
     display: flex;
     flex-wrap: wrap;
-    padding-right: 0;
-    padding-bottom: 94px;
-    padding-left: 0;
-    margin-top: calc(-1 * var(--card-set-gap));
-    margin-left: calc(-1 * var(--card-set-gap));
+    margin: -15px;
   }
 }
 
 .card-set__item {
-  width: 100%;
+  width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-set__item {
+    flex-basis: calc((100% - 4* 15px)/2);
+    margin: 15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .card-set__item {
-    display: flex;
-    flex-basis: calc(100% / 3 - 1 * var(--card-set-gap));
-    margin-top: var(--card-set-gap);
-    margin-left: var(--card-set-gap);
-    cursor: pointer;
+    flex-basis: calc((100% - 6* 15px)/3);
   }
 }
 
 .card-set__link {
-  width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
   border: 1px solid transparent;
@@ -1274,11 +1287,23 @@ p {
   border-left: 1px solid var(--border-card);
 }
 
+@media screen and (min-width: 768px) {
+  .bug-1 {
+    padding-bottom: 47px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bug-2 {
+    padding-bottom: 47px;
+  }
+}
+
 .card-set__title {
   width: 100%;
   font-weight: bold;
   font-size: 18px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.06em;
 }
 

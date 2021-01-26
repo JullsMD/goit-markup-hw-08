@@ -1,4 +1,5 @@
 .burger-menu__container { 
+  @media screen and (max-width: 767px){
     display: none;
     text-align: start;
     position: absolute; 
@@ -29,7 +30,7 @@
     &.is-open {
         display: block;
     }
-
+  }
 }
 
 .burger-menu__item {
