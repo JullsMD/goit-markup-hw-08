@@ -1,5 +1,7 @@
+
 /*  HEADER */
 .page-header {
+  position: relative;
   display: flex;
   align-items: center;
  
@@ -9,32 +11,35 @@
   background-color: var(--primary-background-color);
 
   border-bottom: 1px solid var(--header-border);
-
-
-  @media screen and (min-width: 767px){
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-
-  @media screen and (max-width: 767px){
-  .site-nav.list, .contacts {
-  display: none;
-  }
 }
 
 .nav {
+  width: 100%;
   display: flex;
-  align-items: center;  
+  align-items: center; 
 }
+  
 
 /* Постраничная навигация */
 .site-nav {
-  display: flex;
-  margin-left: 93px; 
+  @media screen and (min-width: 768px) {
+    display: flex;
+   
+    margin-left: 93px;  
+  }
+}
+
+.site-nav__item {
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+    margin-bottom: 32px;
+    padding: 0;
+  }
 }
 .site-nav__item + .site-nav__item {
+@media screen and (min-width: 768px) {
   margin-left: 50px;
+}
 }
 
 .site-nav__link {
@@ -60,6 +65,11 @@
       &:focus {
         color: var(--accent-color);
       }
+@media screen and (max-width: 767px) {
+font-weight: 500;
+font-size: 40px;
+line-height: 1.175px;
+}
 }
 
 
@@ -86,14 +96,33 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  @media screen and (max-width: 767px) {
-    display: none;    
+  @media screen and (max-width: 767px) {   
+    margin-top: 306px;
+  }
+  @media screen and (min-width: 768px){
+    font-size: 12px;
+    line-height: 1.166;
   }
   @media screen and (min-width: 1200px) {
   display: flex;  
   }
 }
-
+.tel {
+  @media screen and (max-width: 767px) { 
+   
+    font-size: 34px;
+    line-height: 1.176;
+  }
+}
+.mail {
+  @media screen and (max-width: 767px) { 
+font-size: 24px;
+line-height: 1.166;
+ margin-top: 32px; 
+ @media screen and (min-width: 768px){
+   margin-bottom: 0;}
+}
+}
 .contacts__link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -106,6 +135,7 @@
       &:focus {
         color: var(--accent-color);
       }
+      
       @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-bottom: 10px;
       }
@@ -118,4 +148,29 @@
    @media screen and (min-width: 1199px) {
     margin-left: 50px; 
   }
+}
+
+// Socials-header
+.socials-header {
+  display: flex;
+  margin-top: 64px;
+  @media screen and (min-width: 768px){
+    display: none;
+  }
+}
+.socials-header__link {
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+text-decoration: none;
+
+font-weight: 500;
+font-size: 18px;
+line-height: 1.222;
+
+color: var(--accent-color);
+}
+
+
+.socials-header__item {
+  margin-right: 20px;
 }

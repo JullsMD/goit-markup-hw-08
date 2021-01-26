@@ -29,41 +29,56 @@
       <a class="logo" href="index.html" lang="en">
         Web<span  class="logo__header">Studio</span>
       </a>
+<!-- burger-menu -->
+<!-- burger-menu кнопка -->
+      <button type="button"  class="burger-menu is-open" data-menu-button>
+        <svg aria-label="переключатель меню навигации" width="40" height="40">
+          <use class="burger-menu__icon-menu-open" href="./images/icons/sprite2.svg#icon-menu-open"></use>
+          <use class="burger-menu__icon-menu-close" href="./images/icons/sprite2.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+
+<!-- burger-menu контейнер -->
+<div class="burger-menu__container is-open " data-menu>  
+      
 <!-- Постраничная навигация -->
       <ul class="site-nav list">
         <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link-current" title="Студия">Студия</a></li>
         <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link" title="Портфолио">Портфолио</a></li>
         <li class="site-nav__item"><a href="/" class="site-nav__link" title="Контакты">Контакты</a></li>
       </ul>
-    </nav>
+    
 <!-- Контакты -->
-     <div class="contacts">
+      <div class="contacts">
       
-      <a class="contacts__link" href="mailto:info@devstudio.com">
-      <svg class="contacts__icon" width="16" height="12">
-        <use href="./images/icons/sprite.svg#icon-mail">
-        </use>
-      </svg>
-        info@devstudio.com</a>
-
-      <a class="contacts__link" href="tel:+380961111111">
+     
+      <a class="contacts__link tel" href="tel:+380961111111">
       <svg class="contacts__icon" width="10" height="16">
         <use href="./images/icons/sprite.svg#icon-tel">
         </use>
       </svg>
         +38 096 111 11 11</a>
-    </div>
-<!-- Burger=menu -->
-    <button type="button"  class="burger-menu is-open" data-menu-button>
-      <svg aria-label="переключатель меню навигации" width="40" height="40">
-        <use class="burger-menu__icon-menu-open" href="./images/icons/sprite2.svg#icon-menu-open"></use>
-        <use class="burger-menu__icon-menu-close" href="./images/icons/sprite2.svg#icon-menu-close"></use>
-      </svg>
-    </button>
 
-    <div class="burger-menu__container is-open" data-menu>
-    </div>
-  </div>
+        <a class="contacts__link mail" href="mailto:info@devstudio.com">
+          <svg class="contacts__icon" width="16" height="12">
+            <use href="./images/icons/sprite.svg#icon-mail">
+            </use>
+          </svg>
+            info@devstudio.com</a>
+    
+      </div>
+<!-- Socials -->
+<ul class="socials-header list">
+  <li class="socials-header__item"><a class="socials-header__link" href="/">Instagram</a></li>
+  <li class="socials-header__item"><a class="socials-header__link" href="/">Twitter</a></li>
+  <li class="socials-header__item"><a class="socials-header__link" href="/">Facebook</a></li>
+  <li class="socials-header__item"><a class="socials-header__link" href="/">LinkedIn</a></li>
+</ul>
+
+</div>
+
+</nav>
+</div>
   </header>
 
                     <!-- MAIN -->
