@@ -219,9 +219,11 @@
       
       <li>
       <div class="wwd-list__img-thumb">
-        <img class="wwd-list__img" src="./images/what-we-do/squoosh/разметка.jpg" alt="руки на клавиатуре перед планшетом" 
+        <img class="wwd-list__img"
+        srcset="./images/what-we-do/wwd1-370.jpg 1x, ./images/what-we-do/wwd1-740@2x.jpg 2x"
+        src="./images/what-we-do/wwd1-370.jpg"
+        alt="руки на клавиатуре перед планшетом" 
         width="370" height="294">
-      
       <div class="wwd-list__img-description">
         Десктопные приложения</div>
       </div>
@@ -229,17 +231,21 @@
       
       <li>
       <div class="wwd-list__img-thumb">
-        <img class="wwd-list__img" src="./images/what-we-do/squoosh/адаптация.jpg" alt="смартфон в руках на фоне ноутбука" 
+        <img class="wwd-list__img"
+        srcset="./images/what-we-do/wwd2-370.jpg 1x, ./images/what-we-do/wwd2-740@2x.jpg 2x"
+        src="./images/what-we-do/wwd2-370.jpg"
+        alt="смартфон в руках на фоне ноутбука" 
         width="370" height="294">
         <div class="wwd-list__img-description">
         Мобильные приложения</div>
       </div>
-      
       </li>
       
       <li>
       <div class="wwd-list__img-thumb">
-        <img class="wwd-list__img" src="./images/what-we-do/squoosh/дизайн.jpg" alt="стилус в руке над планшетом" 
+        <img class="wwd-list__img"
+        srcset="./images/what-we-do/wwd3-370.jpg 1x, ./images/what-we-do/wwd3-740@2x.jpg 2x"
+        src="./images/what-we-do/wwd3-370.jpg" alt="стилус в руке над планшетом" 
         width="370" height="294">
         <div class="wwd-list__img-description">
         Дизайнерские решения</div>
@@ -257,7 +263,19 @@
     <ul class="team-list list">
 <!-- Игорь Демьяненко -->
     <li class="team-list__card">
-      <div class="team-list__img-thumb"><img class="team-list__img" src="./images/team/squoosh/man1.jpg" alt="Мужчина с бородой в очках улыбается" width="450" height="460"></div>
+      <div class="team-list__img-thumb">
+           <img class="team-list__img" srcset="
+                  ./images/team/team1-450.jpg   450w,
+                  ./images/team/team1-900.jpg   900w,
+                  ./images/team/team1-1350.jpg 1350w
+                " src="./images/team/team1-450.jpg" 
+                sizes="
+                (min-width: 1200px) 270px, 
+                (min-width: 768px)  354px, 
+                (min-width: 480px)  450px"
+
+                alt="Мужчина с бородой в очках улыбается">
+      </div>
 
       <div class="team-list__description"> 
         <h3 class="team-list__subtitle"> Игорь Демьяненко </h3>
@@ -307,7 +325,20 @@
 
 <!-- Ольга Репина -->
       <li class="team-list__card">
-       <div class="team-list__img-thumb"><img class="team-list__img" src="./images/team/squoosh/woman.jpg" alt="Блондинка в очках улыбается" width="450" height="460"></div>
+       <div class="team-list__img-thumb">
+         <img class="team-list__img" srcset="
+                  ./images/team/team2-450.jpg   450w,
+                  ./images/team/team2-900.jpg   900w,
+                  ./images/team/team2-1350.jpg 1350w"
+                   src="./images/team/team2-450.jpg" 
+                sizes="
+                (min-width: 1200px) 270px, 
+                (min-width: 768px)  354px, 
+                (min-width: 480px)  450px"
+
+          alt="Блондинка в очках улыбается">
+        </div>
+
        <div class="team-list__description">
          <h3 class="team-list__subtitle"> Ольга Репина </h3>
          <p class="team-list__text" lang="en">Frontend Developer</p>
@@ -356,7 +387,21 @@
 
 <!-- Николай Тарасов -->
       <li class="team-list__card">
-       <div class="team-list__img-thumb"><img class="team-list__img" src="./images/team/squoosh/man2.jpg" alt="Мужчина в светлой рубашке смотрит налево" width="450" height="460"></div>
+       <div class="team-list__img-thumb">
+         <img class="team-list__img"
+         srcset="
+                  ./images/team/team3-450.jpg   450w,
+                  ./images/team/team3-900.jpg   900w,
+                  ./images/team/team3-1350.jpg 1350w
+                " src="./images/team/team3-450.jpg" 
+                sizes="
+                (min-width: 1200px) 270px, 
+                (min-width: 768px)  354px, 
+                (min-width: 480px)  450px"
+         alt="Мужчина в светлой рубашке смотрит налево">
+
+        </div>
+
        <div class="team-list__description">
          <h3 class="team-list__subtitle"> Николай Тарасов </h3>
          <p class="team-list__text" lang="en">Marketing</p>
@@ -404,7 +449,20 @@
 
 <!-- Михаил Ермаков -->
       <li class="team-list__card">
-       <div class="team-list__img-thumb"><img class="team-list__img" src="./images/team/squoosh/man3.jpg" alt="Мужчина в очках и чёрной футболке улыбается" width="450" height="460"></div>
+       <div class="team-list__img-thumb">
+         <img class="team-list__img" srcset="
+         ./images/team/team4-450.jpg   450w,
+         ./images/team/team4-900.jpg   900w,
+         ./images/team/team4-1350.jpg 1350w
+       " src="./images/team/team4-450.jpg" 
+       sizes="
+       (min-width: 1200px) 270px, 
+       (min-width: 768px)  354px, 
+       (min-width: 480px)  450px"
+         
+         alt="Мужчина в очках и чёрной футболке улыбается">
+        </div>
+
        <div class="team-list__description">
          <h3 class="team-list__subtitle"> Михаил Ермаков </h3>
          <p class="team-list__text" lang="en">UI Designer</p>

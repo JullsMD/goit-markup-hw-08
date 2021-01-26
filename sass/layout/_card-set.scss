@@ -101,11 +101,12 @@
       transform: translateY(0%);
     }
   }
-
+  
   .card-set__img {
     display: block;
     width: 100%;
   }
+  
   .card-set__description {
     width: 100%;
 
@@ -115,7 +116,7 @@
     border-left: 1px solid var(--border-card);
   }
 
-
+  
   // Импровизация
   .bug {
     &-1{
