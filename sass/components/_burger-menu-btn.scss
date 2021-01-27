@@ -1,8 +1,8 @@
 .burger-menu {
-position: absolute;
-top: 10%;
-right: 2%;
-z-index: 999;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 999;
   display: inline-flex;
   margin-left: auto;
   margin-right: 0;
@@ -29,6 +29,7 @@ fill: var(--accent-color);
   display: none;
 }
 }
+
 @media screen and (min-width: 768px) {
 .burger-menu {
 display: none;
