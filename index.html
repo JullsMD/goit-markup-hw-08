@@ -21,13 +21,13 @@
 
 <body class="body">
                     <!-- HEADER -->
-<header class="page-header container">
-    <nav class="nav">
+<header class="page-header">
+ <div class="container page-header__container">
+    <div class="page-header__mobile">
 <!-- Логотип-1 -->
       <a class="logo" href="index.html" lang="en">
         Web<span  class="logo__header">Studio</span>
       </a>
-<!-- burger-menu -->
 <!-- burger-menu кнопка -->
       <button type="button"  class="burger-menu" data-menu-button>
         <svg aria-label="переключатель меню навигации" width="40" height="40">
@@ -35,10 +35,10 @@
           <use class="burger-menu__icon-menu-close" href="./images/icons/sprite2.svg#icon-menu-close"></use>
         </svg>
       </button>
-
+    </div>  
 <!-- burger-menu контейнер -->
-<div class="burger-menu__container" data-menu>  
-      
+<nav class="burger-menu__container" data-menu>  
+    
 <!-- Постраничная навигация -->
       <ul class="site-nav list">
         <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link-current" title="Студия">Студия</a></li>
@@ -73,38 +73,38 @@
   <li class="socials-header__item"><a class="socials-header__link" href="/">LinkedIn</a></li>
 </ul>
 
-</div>
-
 </nav>
+
+</div>
   </header>
 
                     <!-- MAIN -->
  <main>
 <!-- Герой -->
-<section class="hero-overlay container">
+<!-- <section class="hero-overlay container">
   <div class="hero">
     <h1 class="visually-hidden">Cлоган</h1>
     <p class="hero__text">Эффективные решения<br> для вашего бизнеса</p>
     <button class="hero__btn" data-modal-open>Заказать услугу</button>
   </div>
-</section>
+</section> -->
 
 <!-- Модальное окно -->
-<div class="backdrop is-hidden" data-modal>
+<!-- <div class="backdrop is-hidden" data-modal>
 
   <div class="modal">
     <button type="button" class="modal__close-icon" data-modal-close>
       <svg width="11" height="11">
         <use href="./images/icons/sprite.svg#close"></use>
       </svg>
-    </button>
+    </button> -->
 
     <!-- ФОРМА -->
-    <form class="form">
+    <!-- <form class="form">
     
-    <strong class="form__slogan">Оставьте свои данные, мы вам перезвоним</strong>
+    <strong class="form__slogan">Оставьте свои данные, мы вам перезвоним</strong> -->
     <!-- name -->
-    <div class="form__style">
+    <!-- <div class="form__style">
       <label class="form__label" for="name">Имя</label>
       <div class="form__input-style">
       <input type="text" id="name" name="name" class="form__input" autocomplete="off" placeholder=" ">
@@ -112,10 +112,10 @@
         <use href="./images/icons/sprite2.svg#name"></use>
       </svg>
     </div>
-    </div>
+    </div> -->
 
     <!-- tel -->
-    <div class="form__style">
+    <!-- <div class="form__style">
       <label class="form__label" for="tel">Телефон</label>
       <div class="form__input-style">
       <input type="tel" id="tel" name="tel" class="form__input" autocomplete="off" placeholder=" ">
@@ -123,10 +123,10 @@
         <use href="./images/icons/sprite2.svg#number"></use>
       </svg>
     </div>
-    </div>
+    </div> -->
 
     <!-- mail -->
-    <div class="form__style">
+    <!-- <div class="form__style">
       <label class="form__label" for="email">Почта</label>
       <div class="form__input-style">
       <input type="email" id="email" name="email" class="form__input" placeholder=" ">
@@ -134,33 +134,33 @@
         <use href="./images/icons/sprite2.svg#email"></use>
       </svg>
     </div>
-    </div>
+    </div> -->
 
     <!-- comment -->
-    <div class="form__style">
+    <!-- <div class="form__style">
       <label class="form__label">Комментарий</label>
       <textarea name="comment" class="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
-    </div>
+    </div> -->
 
     <!-- agreement -->
-    <div class="check">
+    <!-- <div class="check">
       <label class="check__label">
         <input type="checkbox" class="check__checkbox" value="agreement" checked>
           <span class="check__icon"></span>
           <span class="check__agree">Соглашаюсь с рассылкой и принимаю </span>
           <a class="check__link">Условия договора</a>
       </label>
-    </div>
+    </div> -->
 
     <!-- submit -->
-    <button class="submit submit-noplane" type="submit">Отправить</button>
+    <!-- <button class="submit submit-noplane" type="submit">Отправить</button>
     </form>
   </div>
 
-</div>
+</div> -->
 
 <!-- Преимущества -->
-<section class="features container section">
+<!-- <section class="features container section">
     <h2 class="visually-hidden">Преимущества</h2>
     
      <ul class="features-list list">
@@ -207,10 +207,10 @@
 
      </ul>
 </section> 
-
+ -->
 
 <!-- Чем мы занимаемся --> 
-<section class="wwd container section">
+<!-- <section class="wwd container section">
      <h2 class="section__title">Чем мы занимаемся</h2>
      <ul class="wwd-list list">
       
@@ -250,16 +250,16 @@
       </li>
      </ul>
 
-</section>
+</section> -->
 
 <!-- Team -->
-<section class="section team">
+<!-- <section class="section team">
   <div class="container">
     <h2 class="section__title">Наша команда</h2>
 
-    <ul class="team-list list">
+    <ul class="team-list list"> -->
 <!-- Игорь Демьяненко -->
-    <li class="team-list__card">
+    <!-- <li class="team-list__card">
       <div class="team-list__img-thumb">
            <img class="team-list__img" srcset="
                   ./images/team/team1-450.jpg   450w,
@@ -277,9 +277,9 @@
       <div class="team-list__description"> 
         <h3 class="team-list__subtitle"> Игорь Демьяненко </h3>
         <p class="team-list__text" lang="en">Product Designer</p>
-      </div>
+      </div> -->
 <!-- Socials -->
-      <ul class="socials-list list">
+      <!-- <ul class="socials-list list">
 
         <li class="socials-list__item">
           <a class="socials-list__link" href="/">
@@ -318,10 +318,10 @@
         </li>
 
        </ul>
-      </li>
+      </li> -->
 
 <!-- Ольга Репина -->
-      <li class="team-list__card">
+      <!-- <li class="team-list__card">
        <div class="team-list__img-thumb">
          <img class="team-list__img" srcset="
                   ./images/team/team2-450.jpg   450w,
@@ -339,9 +339,9 @@
        <div class="team-list__description">
          <h3 class="team-list__subtitle"> Ольга Репина </h3>
          <p class="team-list__text" lang="en">Frontend Developer</p>
-      </div>
+      </div> -->
 <!-- Socials -->
-      <ul class="socials-list list">
+      <!-- <ul class="socials-list list">
       
         <li class="socials-list__item">
           <a class="socials-list__link" href="/">
@@ -380,10 +380,10 @@
         </li>
       
       </ul>
-      </li>
+      </li> -->
 
 <!-- Николай Тарасов -->
-      <li class="team-list__card">
+      <!-- <li class="team-list__card">
        <div class="team-list__img-thumb">
          <img class="team-list__img"
          srcset="
@@ -402,9 +402,9 @@
        <div class="team-list__description">
          <h3 class="team-list__subtitle"> Николай Тарасов </h3>
          <p class="team-list__text" lang="en">Marketing</p>
-      </div>
+      </div> -->
 <!-- Socials -->
-      <ul class="socials-list list">
+      <!-- <ul class="socials-list list">
       
         <li class="socials-list__item">
           <a class="socials-list__link" href="/">
@@ -442,10 +442,10 @@
           </a>
         </li>
       </ul>
-      </li>
+      </li> -->
 
 <!-- Михаил Ермаков -->
-      <li class="team-list__card">
+      <!-- <li class="team-list__card">
        <div class="team-list__img-thumb">
          <img class="team-list__img" srcset="
          ./images/team/team4-450.jpg   450w,
@@ -464,9 +464,9 @@
          <h3 class="team-list__subtitle"> Михаил Ермаков </h3>
          <p class="team-list__text" lang="en">UI Designer</p>
       </div>
-      <ul class="socials-list list">
+      <ul class="socials-list list"> -->
 <!-- Socials -->
-        <li class="socials-list__item">
+        <!-- <li class="socials-list__item">
           <a class="socials-list__link" href="/">
             <svg class="socials-list__icon" width="20" height="20">
               <use href="./images/icons/sprite.svg#icon-instagram">
@@ -507,10 +507,10 @@
 
 </ul>
 </div>
-</section>
+</section> -->
 
 <!-- Clients -->
-<section class="section">
+<!-- <section class="section">
 <div class="container">
   <h2 class="section__title">Постоянные клиенты</h2>
   <ul class="clients-list list">
@@ -566,32 +566,33 @@
 </ul>
 </div>
 </section>
-
- </main> 
+-->
+ </main>  
 
                     <!-- FOOTER -->
 
-<footer class="page-footer container">
+<!-- <footer class="page-footer">
+  <div class="container">
 <div class="footer">
-<div class="address">
+<div class="address"> -->
 <!-- Логотип-2 -->
-   <a class="logo" href="index.html" lang="en">
+   <!-- <a class="logo" href="index.html" lang="en">
      Web<span  class="logo__footer">Studio</span>
-   </a>
+   </a> -->
 <!-- Адрес -->
-  <address class="address__style">
+  <!-- <address class="address__style">
     <a class="address__link" href="https://www.google.com.ua/maps/search/%D0%B3.+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%BF%D1%80-%D1%82+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26/@50.4729187,30.4184096,12z/data=!3m1!4b1?hl=ru" 
     title="Адрес">г. Киев, пр-т Леси Украинки, 26
-    </a>
+    </a> -->
 <!-- Contacts -->
-   <ul class="contacts-list list">
+   <!-- <ul class="contacts-list list">
      <li class="contacts-list__item"><a class="contacts-list__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
      <li class="contacts-list__item"><a class="contacts-list__link" href="tel:+380991111111">+38 096 111 11 11</a></li>
    </ul>
   </address>
-</div>
+</div> -->
 <!-- socials-footer -->
-<div class="socbox">
+<!-- <div class="socbox">
     <p class="socbox__slogan">присоединяйтесь</p>
 
 <ul class="socbox__list list">
@@ -633,21 +634,21 @@
 
 </ul>
 </div>
-</div>
+</div> -->
 
 <!-- Подписка --> 
-<form class="subscribe">
+<!-- <form class="subscribe">
   <strong class="subscribe__slogan">Подпишитесь на рассылку</strong>
 <div class="subscribe__btn">
   <input class="subscribe__input" type="email" name="subscribe" placeholder="E-mail">
   <button class="submit submit-plane" type="submit">Подписаться</button>
 </div>
 </form>
-
+</div>
 </div>
 </footer>
 
 <script src="./js/modal.js"></script>
-<script src="./js/menu.js"></script>
+<script src="./js/menu.js"></script> -->
 </body>
 </html>
