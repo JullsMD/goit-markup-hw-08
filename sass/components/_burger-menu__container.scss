@@ -1,5 +1,4 @@
 .burger-menu__container { 
-
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
@@ -23,8 +22,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 480px;
-    min-height: 796px;
+    width: 100%;
 
     &.is-open {
       display: block;
@@ -34,10 +32,8 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    flex-grow: 1;
     box-shadow: none;
     padding: 0;
-    align-items: center;
   }
   
 }

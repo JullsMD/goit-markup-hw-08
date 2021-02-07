@@ -2,23 +2,26 @@
 /*  HEADER */
 .page-header {
   position: relative;
-  border-bottom: 1px solid #ececec;
-  margin: 0 auto;
-}
-
-.page-header__container {
+  display: flex;
+  align-items: center;
+ 
   padding-top: 16px;
   padding-bottom: 16px;
-  text-align: center;
+
+  background-color: var(--primary-background-color);
+
+  border-bottom: 1px solid var(--header-border);
   @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center; 
+    padding-top: 0; 
+    padding-bottom: 0;   
   }
 }
+
 .nav {
   width: 100%;
   display: flex;
   align-items: center; 
+  justify-content: space-between;
 }
   
 
@@ -26,8 +29,7 @@
 .site-nav {
   @media screen and (min-width: 768px) {
     display: flex;
-   
-    margin-left: 93px;  
+    // margin-left: 93px;  
   }
 }
 
@@ -91,8 +93,12 @@ line-height: 1.175px;
 // /* Контакты */
 
 .contacts {
-  margin-left: auto;
-  margin-bottom: -10px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+
+  padding: 21px 0;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -104,27 +110,34 @@ line-height: 1.175px;
   @media screen and (min-width: 768px){
     font-size: 12px;
     line-height: 1.166;
+    margin-left: 84px;
   }
   @media screen and (min-width: 1200px) {
-  display: flex;  
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;  
   }
 }
+
 .tel {
   @media screen and (max-width: 767px) { 
-   
     font-size: 34px;
     line-height: 1.176;
   }
 }
 .mail {
-  @media screen and (max-width: 767px) { 
-font-size: 24px;
-line-height: 1.166;
- margin-top: 32px; 
- @media screen and (min-width: 768px){
-   margin-bottom: 0;}
+      @media screen and (max-width: 767px) { 
+    font-size: 24px;
+    line-height: 1.166;
+    margin-top: 32px; 
+    }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
 }
-}
+
 .contacts__link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -137,18 +150,15 @@ line-height: 1.166;
       &:focus {
         color: var(--accent-color);
       }
-      
-      @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-bottom: 10px;
-      }
-}
+    }
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
  .contacts__link + .contacts__link {
-   @media screen and (min-width: 1199px) {
-    margin-left: 50px; 
+   @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    margin-left: 305px; 
   }
 }
 
