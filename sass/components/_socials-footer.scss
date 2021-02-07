@@ -5,9 +5,14 @@
 
 .socbox {
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+    
+  }
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
     margin-right: 93px;
+    margin-left: 0;
   }
 }
 .socbox__list {

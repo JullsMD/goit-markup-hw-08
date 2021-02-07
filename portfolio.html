@@ -16,66 +16,67 @@
 
 <body class="body">
 
-                    <!-- HEADER -->
-                    <header>
-                      <div class="page-header container"> 
-                      
-                          <nav class="nav">
-                      <!-- Логотип-1 -->
-                            <a class="logo" href="index.html" lang="en">
-                              Web<span  class="logo__header">Studio</span>
-                            </a>
-                      <!-- burger-menu -->
-                      <!-- burger-menu кнопка -->
-                            <button type="button"  class="burger-menu is-open" data-menu-button>
-                              <svg aria-label="переключатель меню навигации" width="40" height="40">
-                                <use class="burger-menu__icon-menu-open" href="./images/icons/sprite2.svg#icon-menu-open"></use>
-                                <use class="burger-menu__icon-menu-close" href="./images/icons/sprite2.svg#icon-menu-close"></use>
-                              </svg>
-                            </button>
-                      
-                      <!-- burger-menu контейнер -->
-                      <div class="burger-menu__container is-open " data-menu>  
-                            
-                      <!-- Постраничная навигация -->
-                            <ul class="site-nav list">
-                              <li class="site-nav__item"><a href="./index.html" class="site-nav__link " title="Студия">Студия</a></li>
-                              <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link-current" title="Портфолио">Портфолио</a></li>
-                              <li class="site-nav__item"><a href="/" class="site-nav__link" title="Контакты">Контакты</a></li>
-                            </ul>
-                          
-                      <!-- Контакты -->
-                            <div class="contacts">
-                            
-                           
-                            <a class="contacts__link tel" href="tel:+380961111111">
-                            <svg class="contacts__icon" width="10" height="16">
-                              <use href="./images/icons/sprite.svg#icon-tel">
-                              </use>
-                            </svg>
-                              +38 096 111 11 11</a>
-                      
-                              <a class="contacts__link mail" href="mailto:info@devstudio.com">
-                                <svg class="contacts__icon" width="16" height="12">
-                                  <use href="./images/icons/sprite.svg#icon-mail">
-                                  </use>
-                                </svg>
-                                  info@devstudio.com</a>
-                          
-                            </div>
-                      <!-- Socials -->
-                      <ul class="socials-header list">
-                        <li class="socials-header__item"><a class="socials-header__link" href="/">Instagram</a></li>
-                        <li class="socials-header__item"><a class="socials-header__link" href="/">Twitter</a></li>
-                        <li class="socials-header__item"><a class="socials-header__link" href="/">Facebook</a></li>
-                        <li class="socials-header__item"><a class="socials-header__link" href="/">LinkedIn</a></li>
-                      </ul>
-                      
-                      </div>
-                      
-                      </nav>
-                      </div>
-                        </header>
+<!-- HEADER -->
+<header class="page-header container">
+  <nav class="nav">
+<!-- Логотип-1 -->
+<div>
+    <a class="logo" href="index.html" lang="en">
+      Web<span  class="logo__header">Studio</span>
+    </a>
+</div>
+<!-- burger-menu -->
+<!-- burger-menu кнопка -->
+    <button type="button"  class="burger-btn" aria-expanded="false"
+    aria-controls="menu-container" data-menu-button>
+      <svg class="burger-btn__icon" aria-label="переключатель меню навигации" width="40" height="40">
+        <use class="burger-btn__icon-menu" href="./images/icons/sprite2.svg#icon-menu"></use>
+        <use class="burger-btn__icon-cross" href="./images/icons/sprite2.svg#icon-cross"></use>
+      </svg>
+    </button>
+
+<!-- burger-menu контейнер -->
+<div class="burger-menu__container" data-menu>  
+    
+<!-- Постраничная навигация -->
+<div>
+    <ul class="site-nav list">
+      <li class="site-nav__item"><a href="./index.html" class="site-nav__link " title="Студия">Студия</a></li>
+      <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link-current" title="Портфолио">Портфолио</a></li>
+      <li class="site-nav__item"><a href="/" class="site-nav__link" title="Контакты">Контакты</a></li>
+    </ul>
+</div>
+  
+<!-- Контакты -->
+    <div class="contacts">
+    
+    <a class="contacts__link tel" href="tel:+380961111111">
+    <svg class="contacts__icon" width="10" height="16">
+      <use href="./images/icons/sprite.svg#icon-tel">
+      </use>
+    </svg>
+      +38 096 111 11 11</a>
+
+      <a class="contacts__link mail" href="mailto:info@devstudio.com">
+        <svg class="contacts__icon" width="16" height="12">
+          <use href="./images/icons/sprite.svg#icon-mail">
+          </use>
+        </svg>
+          info@devstudio.com</a>
+  
+    </div>
+<!-- Socials -->
+<ul class="socials-header list">
+<li class="socials-header__item"><a class="socials-header__link" href="/">Instagram</a></li>
+<li class="socials-header__item"><a class="socials-header__link" href="/">Twitter</a></li>
+<li class="socials-header__item"><a class="socials-header__link" href="/">Facebook</a></li>
+<li class="socials-header__item"><a class="socials-header__link" href="/">LinkedIn</a></li>
+</ul>
+
+</div>
+
+</nav>
+</header>
 <!-- MAIN -->
 <main>
 <!-- Портфолио -->
@@ -345,86 +346,87 @@
 </div>
 </section>
 </main>
-  
+
 <!-- FOOTER -->
 
-<footer class="page-footer container">
-  <div class="footer">
-  <div class="address">
-  <!-- Логотип-2 -->
-      <a class="logo" href="index.html" lang="en">
-        Web<span  class="logo__footer">Studio</span>
-      </a>
-  <!-- Адрес -->
-    <address class="address__style">
-      <a class="address__link" href="https://www.google.com.ua/maps/search/%D0%B3.+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%BF%D1%80-%D1%82+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26/@50.4729187,30.4184096,12z/data=!3m1!4b1?hl=ru" 
-      title="Адрес">г. Киев, пр-т Леси Украинки, 26
-      </a>
-  <!-- Contacts -->
-      <ul class="contacts-list list">
-        <li class="contacts-list__item"><a class="contacts-list__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="contacts-list__item"><a class="contacts-list__link" href="tel:+380991111111">+38 096 111 11 11</a></li>
-      </ul>
-    </address>
-  </div>
-  <!-- socials-footer -->
-  <div class="socbox">
-      <p class="socbox__slogan">присоединяйтесь</p>
-  
-  <ul class="socbox__list list">
-  <li class="socbox__item">
-    <a class="socbox__link" href="/">
-      <svg class="socbox__icon" width="20" height="20">
-        <use href="./images/icons/sprite.svg#icon-instagram">
-        </use>
-      </svg>
+<footer class="page-footer">
+  <div class="container page-footer__container">
+<div class="footer">
+<div class="address">
+<!-- Логотип-2 -->
+    <a class="logo" href="index.html" lang="en">
+      Web<span  class="logo__footer">Studio</span>
     </a>
-  </li>
-  
-  <li class="socbox__item">
-    <a class="socbox__link" href="/">
-      <svg class="socbox__icon" width="20" height="20">
-        <use href="./images/icons/sprite.svg#icon-twitter">
-        </use>
-      </svg>
+<!-- Адрес -->
+  <address class="address__style">
+    <a class="address__link" href="https://www.google.com.ua/maps/search/%D0%B3.+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%BF%D1%80-%D1%82+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26/@50.4729187,30.4184096,12z/data=!3m1!4b1?hl=ru" 
+    title="Адрес">г. Киев, пр-т Леси Украинки, 26
     </a>
-  </li>
-  
-  <li class="socbox__item">
-    <a class="socbox__link" href="/">
-      <svg class="socbox__icon" width="20" height="20">
-        <use href="./images/icons/sprite.svg#icon-facebook">
-        </use>
-      </svg>
-    </a>
-  </li>
-  
-  <li class="socbox__item">
-    <a class="socbox__link" href="/">
-      <svg class="socbox__icon" width="20" height="20">
-        <use href="./images/icons/sprite.svg#icon-linkedin">
-        </use>
-      </svg>
-    </a>
-  </li>
-  
-  </ul>
-  </div>
-  </div>
-  
-  <!-- Подписка --> 
-  <form class="subscribe">
-    <strong class="subscribe__slogan">Подпишитесь на рассылку</strong>
-  <div class="subscribe__btn">
-    <input class="subscribe__input" type="email" name="subscribe" placeholder="E-mail">
-    <button class="submit submit-plane" type="submit">Подписаться</button>
-  </div>
-  </form>
-  
-  </div>
-  </footer>
-  
-  <script src="./js/modal.js"></script>
-  <script src="./js/menu.js"></script>
-  </body>
-  </html>
+<!-- Contacts -->
+    <ul class="contacts-list list">
+      <li class="contacts-list__item"><a class="contacts-list__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      <li class="contacts-list__item"><a class="contacts-list__link" href="tel:+380991111111">+38 096 111 11 11</a></li>
+    </ul>
+  </address>
+</div>
+<!-- socials-footer -->
+<div class="socbox">
+    <p class="socbox__slogan">присоединяйтесь</p>
+
+<ul class="socbox__list list">
+<li class="socbox__item">
+  <a class="socbox__link" href="/">
+    <svg class="socbox__icon" width="20" height="20">
+      <use href="./images/icons/sprite.svg#icon-instagram">
+      </use>
+    </svg>
+  </a>
+</li>
+
+<li class="socbox__item">
+  <a class="socbox__link" href="/">
+    <svg class="socbox__icon" width="20" height="20">
+      <use href="./images/icons/sprite.svg#icon-twitter">
+      </use>
+    </svg>
+  </a>
+</li>
+
+<li class="socbox__item">
+  <a class="socbox__link" href="/">
+    <svg class="socbox__icon" width="20" height="20">
+      <use href="./images/icons/sprite.svg#icon-facebook">
+      </use>
+    </svg>
+  </a>
+</li>
+
+<li class="socbox__item">
+  <a class="socbox__link" href="/">
+    <svg class="socbox__icon" width="20" height="20">
+      <use href="./images/icons/sprite.svg#icon-linkedin">
+      </use>
+    </svg>
+  </a>
+</li>
+
+</ul>
+</div>
+</div>
+
+<!-- Подписка --> 
+<form class="subscribe">
+  <strong class="subscribe__slogan">Подпишитесь на рассылку</strong>
+<div class="subscribe__btn">
+  <input class="subscribe__input" type="email" name="subscribe" placeholder="E-mail">
+  <button class="submit submit-plane" type="submit">Подписаться</button>
+</div>
+</form>
+</div>
+</div>
+</footer>
+
+<script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script> 
+</body>
+</html>
